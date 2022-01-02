@@ -11,7 +11,7 @@
 - Detect bash or zsh for setting shell environment variables
 - Use @student.42adel.org.au email format.
 
-![42 header](img/42header.png)
+![42 header](img/42header.jpg)
 
 ### **UNIX (macOS, Linux, BSD (untested)) Quick Setup**
 
