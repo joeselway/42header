@@ -1,10 +1,10 @@
 # **42 Header**
 
-42 (Paris)
+42 (Adelaide)
 
 ### **Description**
 
-42 standard header for vim editor.
+42 standard header for vim editor with modified setup script to set @student.42adel.org.au email.
 
 ![42 header](img/42header.jpg)
 
@@ -24,7 +24,7 @@ Add in `~/.zshrc` your:
 
 ```vim
 let g:user42 = 'yourLogin'
-let g:mail42 = 'yourLogin@student.42.fr'
+let g:mail42 = 'yourLogin@student.42adel.org.au'
 ```
 
 ### **Usage**
