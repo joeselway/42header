@@ -13,7 +13,7 @@
 
 ![42 header](img/42header.jpg)
 
-### **UNIX (macOS, Linux, BSD (untested)) Quick Setup**
+### **UNIX (macOS/Linux) Quick Setup**
 
 - [Download .zip of this repository](https://github.com/joeselway/42header/archive/refs/heads/master.zip)
 - Extract and `cd` to extracted directory
