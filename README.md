@@ -7,7 +7,7 @@
 42 standard header for vim editor with modified setup script to:
 - Use @student.42adel.org.au email format.
 - Accept argument for 42 username (*e.g.: `./set_header.sh jselway`*)
-- Interactively prompt for 42 username with no argument
+- Interactively prompt for 42 username when no argument given
 - Set .vimrc for home use
 - Detect bash or zsh for setting shell environment variables
 
@@ -17,7 +17,7 @@
 
 - [Download .zip of this repository](https://github.com/joeselway/42header/archive/refs/heads/master.zip)
 - Extract and `cd` to extracted directory
-- Run `./set_header.sh` followed by your 42 username, e.g. `./set_header.sh jselway`, or enter your 42 username when prompted!
+- Run `source ./set_header.sh` followed by your 42 username, e.g. `./set_header.sh jselway`, or enter your 42 username when prompted! *(`source` will enable detecting current shell, otherwise `bash` is the default)*
 
 ### **UNIX Manual Setup (*set_header.sh method above recommended!*)**
 
