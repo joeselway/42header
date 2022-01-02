@@ -15,11 +15,11 @@
 
 ### **UNIX (macOS, Linux, BSD (untested)) Quick Setup**
 
-- Download .zip of the repo code
+- [text]Download .zip of this repository(https://github.com/joeselway/42header/archive/refs/heads/master.zip)
 - Extract and `cd` to extracted directory
 - Run `./set_header.sh` followed by your 42 username, e.g. `./set_header.sh jselway`, or enter your 42 username when prompted!
 
-### **UNIX Manual Setup**
+### **UNIX Manual Setup (*set_header.sh method above recommended!*)**
 
 Copy `stdheader.vim` in your `~/.vim/plugin`, or use your favorite plugin
 manager. Then set the user and mail variables as explained below.
@@ -45,12 +45,6 @@ In **NORMAL** mode you can use `:Stdheader` or simply press the shortcut <kbd>F1
 Under **Linux** you eventually need to disable the **help** shortcut of your **terminal** :
 
 For **Terminator**, right click -> Preferences -> Shortcuts -> change help with something other than <kbd>F1</kbd>
-
-### **Note**
-
-Inside the **42 clusters** you can easily run:
-
-`$ ./set_header.sh`
 
 ### **Credits**
 
