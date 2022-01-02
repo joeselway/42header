@@ -6,7 +6,7 @@
 
 42 standard header for vim editor with modified setup script to set @student.42adel.org.au email.
 
-![42 header](img/42header.jpg)
+![42 header](img/42header.png)
 
 ### **UNIX Setup**
 
