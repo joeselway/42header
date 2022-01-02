@@ -5,11 +5,11 @@
 ### **Description**
 
 42 standard header for vim editor with modified setup script to:
+- Use @student.42adel.org.au email format.
 - Accept argument for 42 username (*e.g.: `./set_header.sh jselway`*)
 - Interactively prompt for 42 username with no argument
 - Set .vimrc for home use
 - Detect bash or zsh for setting shell environment variables
-- Use @student.42adel.org.au email format.
 
 ![42 header](img/42header.jpg)
 
