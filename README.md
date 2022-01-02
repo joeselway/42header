@@ -15,7 +15,7 @@
 
 ### **UNIX (macOS, Linux, BSD (untested)) Quick Setup**
 
-- [text]Download .zip of this repository(https://github.com/joeselway/42header/archive/refs/heads/master.zip)
+- [Download .zip of this repository](https://github.com/joeselway/42header/archive/refs/heads/master.zip)
 - Extract and `cd` to extracted directory
 - Run `./set_header.sh` followed by your 42 username, e.g. `./set_header.sh jselway`, or enter your 42 username when prompted!
 
