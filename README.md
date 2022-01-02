@@ -9,7 +9,7 @@
 - Accept argument for 42 username (*e.g.: `./set_header.sh jselway`*)
 - Interactively prompt for 42 username when no argument given
 - Set .vimrc for home use
-- Detect bash or zsh for setting shell environment variables
+- Detect bash or zsh for setting shell environment variables (use `source` command per below)
 
 ![42 header](img/42header.jpg)
 
