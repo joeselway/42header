@@ -4,11 +4,22 @@
 
 ### **Description**
 
-42 standard header for vim editor with modified setup script to set @student.42adel.org.au email.
+42 standard header for vim editor with modified setup script to:
+- Accept argument for 42 username (*e.g.: `./set_header.sh jselway`*)
+- Interactively prompt for 42 username with no argument
+- Set .vimrc for home use
+- Detect bash or zsh for setting shell environment variables
+- Use @student.42adel.org.au email format.
 
 ![42 header](img/42header.png)
 
-### **UNIX Setup**
+### **UNIX (macOS, Linux, BSD (untested)) Quick Setup**
+
+- Download .zip of the repo code
+- Extract and `cd` to extracted directory
+- Run `./set_header.sh` followed by your 42 username, e.g. `./set_header.sh jselway`, or enter your 42 username when prompted!
+
+### **UNIX Manual Setup**
 
 Copy `stdheader.vim` in your `~/.vim/plugin`, or use your favorite plugin
 manager. Then set the user and mail variables as explained below.
