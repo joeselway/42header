@@ -3,22 +3,52 @@
 
 # Set variables
 
-if [ ! -z "$USER" ]
+if [ -n "$ZSH_VERSION" ]
 then
-    echo "USER=`/usr/bin/whoami`" >> ~/.zshrc
-    echo "export USER" >> ~/.zshrc
+    RCFILE="$HOME/.zshrc"
+elif [ -n "$BASH_VERSION" ]
+then
+    RCFILE="$HOME/.bashrc"
+else
+    echo -n "No compatible shell detected, aborting..."
+    exit
 fi
 
-if [ ! -z "$GROUP" ]
+if [ ! -f $RCFILE ]
 then
-    echo "GROUP=`/usr/bin/id -gn $user`" >> ~/.zshrc
-    echo "export GROUP" >> ~/.zshrc
+    touch $RCFILE
 fi
 
-if [ ! -z "$MAIL" ]
+if [ ! -f "$USER/.vimrc" ]
 then
-    echo "MAIL="$USER@student.42.fr"" >> ~/.zshrc
-    echo "export MAIL" >> ~/.zshrc
+    touch "$HOME/.vimrc"
+fi
+
+if [ ! $1 ]
+then
+    echo -n "Please enter your 42 username: "
+    read USER
+    echo -n "User is $USER"
+else
+    USER="$1"
+    echo -n "User is $USER" 
+fi
+
+if [ -z "$USER" ]
+then
+    echo "USER=`/usr/bin/whoami`" >> $RCFILE
+    echo "export USER" >> $RCFILE
+else
+    echo "USER="$USER"" >> $RCFILE
+    echo "export USER" >> $RCFILE
+    echo "let g:user42 = '"$USER"'" >> "$HOME/.vimrc"
+fi
+
+if [ -z "$MAIL" ]
+then
+    echo "MAIL="$USER@student.42adel.org.au"" >> $RCFILE
+    echo "export MAIL" >> $RCFILE
+    echo "let g:mail42 = '"$USER@student.42adel.org.au"'" >> "$HOME/.vimrc"
 fi
 
 mkdir -p ~/.vim/plugin
@@ -26,4 +56,4 @@ mkdir -p ~/.vim/plugin
 # Add stdheader to vim plugins
 cp plugin/stdheader.vim ~/.vim/plugin/
 
-source ~/.zshrc
+source $RCFILE
